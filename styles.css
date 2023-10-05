@@ -1,9 +1,32 @@
+:root{
+    box-shadow: border-box;
+}
 body {
-    background-color: powderblue;
+    margin: 0;
+    background-color: #116D6E;
   }
-  h1 {
-    color: blue;
+h1 {
+    color: #4E3636;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    margin: 0;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
-  p {
-    color: red;
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 43%;
+    height: 100%;
   }
