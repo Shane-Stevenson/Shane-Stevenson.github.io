@@ -63,7 +63,6 @@ p {
     /* border: 1px solid green; */
     height: 100vh;
     gap: 5rem;
-    margin-right: 2rem
 
    
 }
@@ -76,6 +75,7 @@ p {
     background-color: #F1EFEF;
     display: flex;
     justify-content: center;
+    padding-left: 1rem;
 }
 
 .button1 p {
