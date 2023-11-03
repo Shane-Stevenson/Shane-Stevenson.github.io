@@ -1,35 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, intial-scale=1.0">
+    <title>Shane Stevenson - Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+    </style>
 </head>
 <body>
 
-    <h1><span>Shane Stevenson</span> | <span>SDSU</span></h1>
-    
+<div id="header">
     <div class="container">
-        <section class = 'img'>
-            <img src="static/resume.png" alt="resume">
-        </section>
-        <section class = 'buttons'>
-            <a target ="blank_" href="https://github.com/Shane-Stevenson" ><div class = 'button1'>
-                <p>Github</p></a>
-            </div>
-            <a target="blank_" href="https://www.linkedin.com/in/shane-stevenson-145941266/"> <div class = 'button1'>
-                    <p>LinkedIn</p></a>
-                </div>
-            <a target="blank_" href="https://homeye.sdsu.edu"><div class = 'button1'>
-                <p>Homeye</p></a>
-            </div>
-        </section>
-       
+        <nav>
+            <img src="static/shane_logo_3.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact/socials">Contact/Socials</a></li>
+            </ul>
+        </nav>
     </div>
+    <div class="header-text">
+        <h1>Hi, I'm <span>Shane Stevenson</span><br>from San Diego</h1>
+    </div>
+</div>
+<!-- ---------------about--------------- -->
+<div id="about">
+    <div class="container2">
+        <div class="row">
+            <div class="about-col1">
+                <img src="static/vertical.jpeg">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello, my name is Shane Stevenson. I am an undergraduate student at San Diego state University with a 
+                    passion for data science, machine learning, and mathematics. I stand apart from my peers  
+                    because my ability and passion for solving real world problems with data science and machine learning is 
+                    backed by my strong technical backbone in deep mathematics as well as my unrelenting work ethic. To further help 
+                    me stand out, my technical experience with machine learning tools like pytorch, numpy, and pandas is extensive, 
+                    and my deep understanding of computation furthers my abilities beyond the status quo.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning</span><br>AI model development</li>
+                        <li><span>Unix/Linux</span><br>System and server administration</li>
+                        <li><span>Data Science</span><br>Processing large datasets</li>
+                        <li><span>Languages</span>
+                        <br>Python
+                        <br>C++
+                        <br>Java
+                        <br>HLSL
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>University of North Texas - Research Experience for Undergraduates<span class="date">Summer 2023</span></span>
+                            <br>Handled and processed large amounts of point cloud data
+                            <br>Developed voxel grid data augmentation
+                            <br>Developed a custom AI to count the number of trees in a given point cloud with an accuracy of 85%
+                            <br>Utilized the TACC supercomputer to train a task adjacent model for future transfer learning
+                        </li>
+                        <li><span>Machine Vision and Perception Lab<span class="date">Current</span></span>
+                            <br>Server administrator for the lab's <a href="https://homeye.sdsu.edu/" target="_blank">Homeye</a> website
+                            <br>Utilized web scraping tools to generate satellite imagery for our database
+                            <br>Contributed to our data collection pipeline
+                        </li>
+                        <li><span>SDSU Rocket Project<span class="date">Current</span></span>
+                            <br>Set up a Raspberry pi 3 B+ for data acquisition
+                            <br>Interfaced with a ADS1115 and a pressure sensor in order to record data during a static launch
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>San Diego State University</span>
+                            <br>Double major in computer science and mathematics
+                            <br>3.94 GPA
+                        </li>
+                        <li><span>Relevant coursework</span>
+                            <br>Computer organization
+                            <br>Data Structures and Algorithms
+                            <br>Mathematical Data Science
+                            <br>Linear Algebra
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------Contact/Socials--------------- -->
+
+<div id="contact/socials">
+    <h1 class="contact-socials-header">Contact Info and Socials</h1>
+    <div class="social-icons1">
+        <div class="github">
+            <a href="https://github.com/Shane-Stevenson" target="blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/shane-stevenson-145941266/" target="blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="social-icons2">
+        <div class="socialsRow">
+            <div class="col1">
+            <i class="fa fa-phone-square"></i>
+            </div>
+            <div class="col2">
+                <h1>442-224-8343</h1>
+            </div>
+        </div>
+        <div class="social-icons2">
+            <div class="socialsRow">
+                <div class="col1">
+                <i class="fa fa-envelope"></i>
+                </div>
+                <div class="col2">
+                    <h1>shanestevenson04@gmail.com</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
 
 </body>
 </html>
