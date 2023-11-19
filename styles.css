@@ -12,7 +12,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(static/cellclouds.jpg);
+    min-height: 100vh;
+    background-image: url(static/horiz1.png);
     background-size: cover;
     background-position: center;
 }
@@ -57,7 +58,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    color: #080808 ;
+    color: #fff ;
     /* border:2px solid red; */
     margin-top: 20%;
     margin-left: 20px;
@@ -65,7 +66,9 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 10px
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 4vh;
 }
 .header-text h1 span{
     color:#ff004f
@@ -73,7 +76,8 @@ nav ul li a:hover::after{
 /* ---------about---------- */
 
 #about{
-    color: #ababab
+    color: #ababab;
+    min-height: 100vh;
 }
 .row{
     /* border:2px green solid; */
@@ -84,7 +88,7 @@ nav ul li a:hover::after{
 }
 .about-col1{
     text-align: center;
-    width:40%;
+    width:50%;
     /* border:2px red solid; */
     /* flex:1; */
 }
@@ -95,7 +99,7 @@ nav ul li a:hover::after{
     flex:1;
 }
 .about-col1 img{
-    width: 65%
+    width: 90%
 }
 .sub-title{
     font-size: 60px;
@@ -132,6 +136,18 @@ nav ul li a:hover::after{
 .tab-contents{
     padding-top: 10px;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+#red{
+    color:#ff004f;
+}
+
+#date{
+    padding-right:10px;
+    text-align: right;
+}
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
@@ -155,12 +171,16 @@ nav ul li a:hover::after{
     padding-left: 5px;
     font-size: 15px;
 }
+
+#contact-socials{
+    min-height: 100vh;
+}
+
 .contact-socials-header{
     text-align: center;
-    font-size: 60px
+    font-size: 60px;
 }
 .social-icons1{
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -187,35 +207,128 @@ nav ul li a:hover::after{
     /* border:2px red solid; */
     flex:1;
 }
-.socialsRow{
+
+/* SHANE ORIGINAL */
+/* .resume{
+    margin: auto;
+    width: 25%;
+    background-color: #ff004f;
+    padding: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+    border-radius: 40px;
+    border: 5px solid #ff004f;
+} */
+
+.resume{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: #ff004f; */
+    padding: 10px;
+    /* margin-bottom: 80px; */
+    text-align: center;
+    margin:auto;
+    width: 25%;
+    border-radius: 40px;
+    border: 5px solid #ff004f;
 }
-.col1{
-    text-align: right;
-    width:45%;
-    font-size: 10vh;
-    padding-right: 10vh;
-    padding-left: 10vh;
-    /* border: 2px green solid; */
+
+
+.extraSpace{
+    height: 80px;
 }
-.col2{
-    /* border:2px red solid; */
-    width: auto;
-    font-size:15px;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    flex:1;
+
+#underline a{
+    text-decoration: none;
+    color: #DADBDD
 }
-.col2 h1{
+
+#underline::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+} 
+
+
+#underline:hover::after {
+    width: 100%;
+}
+
+#underline {
     position: relative;
-    top: 32%;
-    /* font-size: 3vh */
+}
+
+#underline:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-device-width: 800px) {
+    .about-col1{
+        text-align: center;
+        width:0%;
+        /* border:2px red solid; */
+        /* flex:1; */
+    }
+    .github{
+        text-align: right;
+        width:50%;
+        font-size: 15vh;
+        padding-right: 10vh;
+        /* border:2px red solid; */
+        /* flex:1; */
+    }
+    .linkedin{
+        text-align: left;
+        width: auto;
+        font-size:15vh;
+        padding-left: 5vh;
+        /* border:2px red solid; */
+        flex:1;
+    }
+    .col1{
+        width: 20%;
+    }
 }
 
 
+/* Social Icons attempt #2 */
 
+.social-icons2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 4rem;
+    /* border: 1px solid green; */
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size: 25px;
+    font-size: 2
+}
+
+.fa {
+    font-size: 10vh;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.centering2 {
+    display: flex;
+    justify-content: center;
+}
 
 
 
