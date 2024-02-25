@@ -13,7 +13,7 @@ body{
     width: 100%;
     height: 100vh;
     min-height: 100vh;
-    background-image: url(static/horiz1.png);
+    background-image: url(static/shane_good_1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -67,7 +67,7 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 10px;
-    text-align: right;
+    text-align: left;
     padding-right: 4vh;
 }
 .header-text h1 span{
