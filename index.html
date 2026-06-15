@@ -2,158 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width-device-width, intial-scale=1.0">
-    <title>Shane Stevenson - Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane Stevenson</title>
+    <meta name="description" content="Shane Stevenson — incoming PhD student at UC San Diego working on reduced-order modeling, inference, and control of dynamical systems.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="static/shane_logo_3.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact-socials">Contact/Socials</a></li>
-            </ul>
-        </nav>
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-name">Shane Stevenson</a>
+        <ul>
+            <li><a href="index.html" class="nav-active">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="stevenson_graduate_resume_2026.pdf" target="_blank">CV</a></li>
+        </ul>
     </div>
-    <div class="header-text">
-        <h1>Hi, I'm <span>Shane Stevenson</span><br>from San Diego</h1>
-    </div>
-</div>
-<!-- ---------------about--------------- -->
-<div id="about">
-    <div class="container2">
-        <div class="row">
-            <div class="about-col1">
-                <img src="static/shane_vert_1.jpg">
+</nav>
+
+<main class="about-main">
+    <div class="about-grid">
+
+        <aside class="about-sidebar">
+            <div class="photo-placeholder">
+                <span>SS</span>
             </div>
-            <div class="about-col2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    Hello, my name is Shane Stevenson. I am an undergraduate student at San Diego state University with a 
-                    passion for data science, machine learning, and mathematics. I stand apart from my peers  
-                    because my ability and passion for solving real world problems with data science and machine learning is 
-                    backed by my strong technical backbone in programming and deep mathematics as well as my unrelenting work ethic. To further help 
-                    me stand out, my technical experience with machine learning tools like pytorch, numpy, and pandas is extensive, 
-                    and my deep understanding of computation furthers my abilities beyond the status quo.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Machine Learning</span><br>AI model development</li>
-                        <li><span>Unix/Linux</span><br>System and server administration</li>
-                        <li><span>Data Science</span><br>Data Processing<br>Data Augmentation</li>
-                        <li><span>Languages</span>
-                        <br>Python
-                        <br>C++
-                        <br>Java
-                        <br>HLSL
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><div class="flex"><span id="red">Naval Research Enterprise Internship Program</span><span id="date">June 2024 - August 2024</span></div>
-                            Independently designed a scalable error characterization pipeline to assess the accuracy of aggregated weather sensors
-                            <br>Collaborated with team members to validate my error characterization pipeline, ensuring its accuracy and reliability
-                            <br>Interfaced with Docker to create a continuous integration/continuous deployment (CI/CD) pipeline on GitHub
-                        </li>
-                        <li><div class="flex"><span id="red">Machine Vision and Perception Lab</span><span id="date">August 2023 - June 2024</span></div>
-                            Server administrator for the lab's <a href="https://homeye.sdsu.edu/" target="_blank">Homeye</a> website
-                            <br>Utilized web scraping tools to generate satellite imagery for our database
-                            <br>Contributed to our data collection pipeline
-                            <br>Won a $3,000 grant for our team after completion of the National Science Foundation’s I-Corps program
-                        </li>
-                        <li><div class="flex"><span id="red">University of North Texas - Research Experience for Undergraduates</span><span id="date">Summer 2023</span></div>
-                            Handled and processed large amounts of point cloud data
-                            <br>Developed voxel grid data augmentation
-                            <br>Developed a custom AI to count the number of trees in a given point cloud with an accuracy of 85%
-                            <br>Utilized the TACC supercomputer to train a task adjacent model for future transfer learning
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>San Diego State University</span>
-                            <br>Double major in computer science and mathematics
-                            <br>3.98 GPA
-                        </li>
-                        <li><span>Relevant coursework</span>
-                            <br>Data Structures, Algorithms, Introduction to Artificial Intelligence, Advanced Programming Languages, 
-                            Computer Organization, Intro to Software Systems, Computer Architecture, Scientific Database Techniques, 
-                            Mathematical Data Science, Linear Algebra II, Abstract Algebra, Advanced Calculus, Algebraic Coding Theory
-                        </li>
-                    </ul>
-                </div>
+            <div class="sidebar-links">
+                <a href="mailto:shanestevenson04@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/Shane-Stevenson" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/shane-stevenson-ss/" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://orcid.org/0009-0001-1607-4122" target="_blank" rel="noopener">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+                <a href="stevenson_graduate_resume_2026.pdf" target="_blank" rel="noopener">
+                    <i class="fas fa-file-pdf"></i> CV
+                </a>
             </div>
+        </aside>
+
+        <div class="about-content">
+            <h1>Shane Stevenson</h1>
+            <p class="position">Incoming PhD Student, Mechanical and Aerospace Engineering</p>
+            <p class="institution">University of California, San Diego</p>
+            <p class="advisor">
+                Advisor:
+                <a href="https://kramer.ucsd.edu" target="_blank" rel="noopener">Prof. Boris Kramer</a>
+            </p>
+
+            <p class="bio">
+                I am an incoming PhD student in the Department of Mechanical and Aerospace Engineering at
+                UC San Diego, where I will be advised by
+                <a href="https://kramer.ucsd.edu" target="_blank" rel="noopener">Prof. Boris Kramer</a>.
+                My research focuses on advancing theory and computation for modeling, inference, and
+                control of dynamical systems, particularly those that are noisy and partially observed,
+                with reduced-order modeling and machine learning as core tools.
+            </p>
+            <p class="bio">
+                Before joining UCSD, I completed my undergraduate degree at San Diego State University,
+                where I double-majored in Computer Science and Computational Mathematics. I was a member
+                of the SDSU Climate Informatics Lab under Prof. Sam Shen, where I worked primarily on
+                using, testing, and fine-tuning large-scale weather forecasting models, as well as
+                promoting model democracy by making these tools accessible to smaller university research
+                groups. I was also a member of the SDSU Machine Vision and Perception Lab under
+                Prof. Xiaobai Liu, where I helped build simulation environments for training robotic agents.
+            </p>
+            <p class="bio">
+                Underlying my research is a commitment to writing fast, sustainable research software.
+                I care deeply about readability, and I think a lot about how we translate mathematical
+                methods into code so that researchers from different backgrounds can easily read, run, and
+                adapt the implementations to their own work. My aim is software that grows richer and more
+                self-sustaining as a community of users builds on top of it.
+            </p>
         </div>
-    </div>
-</div>
-
-<!-- ---------------Contact/Socials--------------- -->
-
-<div id="contact-socials">
-    <h1 class="contact-socials-header">Contact Info and Socials</h1>
-    <div class="social-icons1">
-        <div class="github">
-            <a href="https://github.com/Shane-Stevenson" target="blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-        </div>
-        <div class="linkedin">
-            <a href="https://www.linkedin.com/in/shane-stevenson-145941266/" target="blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    <div class = "centering2">
-        <div class="social-icons2">
-            <section class ="centering">
-                <i class="fa fa-phone-square"></i>
-                    <h1>&nbsp;&nbsp;442-224-8343</h1>
-            </section>
-            <section class = "centering">
-                <i class="fa fa-envelope"></i>
-                <h1>shanestevenson04@gmail.com</h1>
-            </section>
-        </div>
-    </div>
-    
-    <div class="resume">
-        <h1 id="underline"><a href="static/shane_Stevenson_resume_2024.pdf" download="shane_Stevenson_resume" target="blank">Download Resume</a></h1>
-        
-    </div>
-    
-    <div class="extraSpace">
 
     </div>
-</div>
+</main>
 
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-
-</script>
+<footer>
+    <p>Last updated June 2026 &nbsp;·&nbsp; Built from scratch in HTML &amp; CSS</p>
+</footer>
 
 </body>
 </html>
