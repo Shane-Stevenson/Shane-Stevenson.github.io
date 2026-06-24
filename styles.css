@@ -170,29 +170,15 @@ nav ul li a.nav-active::after {
     top: 96px;
 }
 
-.photo-placeholder {
+.profile-photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #E2E6EE 0%, #C2CADC 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--serif);
-    font-size: 2.75rem;
-    font-weight: 500;
-    color: #6A7791;
-    letter-spacing: 0.04em;
+    object-fit: cover;
     margin-bottom: 1.5rem;
     flex-shrink: 0;
     box-shadow: var(--shadow);
 }
-
-/* To swap in real photo: replace .photo-placeholder div with:
-   <img src="static/your-photo.jpg" alt="Shane Stevenson" class="profile-photo">
-   and add:
-   .profile-photo { width:200px; height:200px; border-radius:50%; object-fit:cover; margin-bottom:1.5rem; box-shadow:var(--shadow); }
-*/
 
 .sidebar-links {
     display: flex;
@@ -571,10 +557,9 @@ footer p {
         padding-left: 0;
     }
 
-    .photo-placeholder {
+    .profile-photo {
         width: 110px;
         height: 110px;
-        font-size: 1.6rem;
         margin-bottom: 0;
     }
 
